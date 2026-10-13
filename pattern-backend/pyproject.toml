@@ -1,0 +1,23 @@
+[project]
+name = "pattern-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tejasviravikumar", email = "teyaravi@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.142.2",
+    "numpy>=2.5.4",
+    "opencv-python-headless>=5.0.0.93",
+    "python-multipart>=0.0.32",
+    "shapely>=2.2.0",
+]
+
+[project.scripts]
+pattern-backend = "pattern_backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"

@@ -1,0 +1,110 @@
+.viewer {
+  display: grid;
+  gap: 16px;
+  margin-top: 40px;
+  text-align: left;
+  color: #2a241d;
+}
+
+.viewer__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  font-size: 14px;
+}
+.viewer__toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.viewer__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  color: #6b6052;
+}
+.viewer__legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.key {
+  display: inline-block;
+  width: 28px;
+  height: 0;
+  border-top: 2px solid #2a241d;
+}
+.key--cut {
+  border-top: 2px dashed #b5532f;
+}
+.key--dart {
+  border-top-color: #7a3fb0;
+}
+.key--notch {
+  border-top-width: 4px;
+}
+
+.piece {
+  border: 1px solid #e3dbcf;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+.piece__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #efe8dc;
+}
+.piece__head h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.piece__head p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #6b6052;
+}
+
+.piece__canvas {
+  padding: 12px;
+  background: #faf7f2;
+}
+/* Shown responsively; the exported SVG keeps its real cm size */
+.piece__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+}
+
+.viewer__btn {
+  padding: 10px 16px;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: #b5532f;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.viewer__btn:hover {
+  background: #9a4527;
+}
+
+.viewer__warnings {
+  margin: 0;
+  padding: 12px 16px 12px 32px;
+  border-radius: 10px;
+  background: #fff6e0;
+  color: #6b4a00;
+  font-size: 14px;
+}
